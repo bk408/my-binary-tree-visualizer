@@ -108,16 +108,37 @@ const node3 = new BinaryTreeNode(3);
 root.setRight(node3);
 
 const node4 = new BinaryTreeNode(4);
-node3.setLeft(node4);
+node2.setLeft(node4);
+
+const node5 = new BinaryTreeNode(5);
+node2.setRight(node5);
+
+const node6 = new BinaryTreeNode(6);
+node3.setLeft(node6);
 
 const node7 = new BinaryTreeNode(7);
 node3.setRight(node7);
 
-const node5 = new BinaryTreeNode(5);
-node2.setLeft(node5);
+const node8 = new BinaryTreeNode(8);
+node4.setLeft(node8);
 
-const node6 = new BinaryTreeNode(6);
-node2.setRight(node6);
+const node9 = new BinaryTreeNode(9);
+node4.setRight(node9);
+
+const node10 = new BinaryTreeNode(10);
+node5.setLeft(node10);
+
+const node11 = new BinaryTreeNode(11);
+node5.setRight(node11);
+
+const node12 = new BinaryTreeNode(12);
+node6.setRight(node12);
+
+const node13 = new BinaryTreeNode(13);
+node7.setLeft(node13);
+
+const node14 = new BinaryTreeNode(14);
+node9.setLeft(node14);
 
 console.log(root);
 

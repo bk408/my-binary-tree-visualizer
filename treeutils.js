@@ -48,7 +48,12 @@ export function connectEdges(canvasElement, xCoordinates, yCoordinates) {
   const { xStart, xEnd } = xCoordinates;
   const { yStart, yEnd } = yCoordinates;
 
+  const xHalf = (xStart + xEnd) / 2;
+  const yHalf = (yStart + yEnd) / 2;
+
   const start = { x: xStart, y: yStart };
+  const cPoint1 = { x: xHalf, y: yHalf };
+  const cPoint2 = { x: xEnd, y: yHalf };
   const end = { x: xEnd, y: yEnd };
 
   // draw curve
@@ -57,6 +62,16 @@ export function connectEdges(canvasElement, xCoordinates, yCoordinates) {
   context.beginPath();
   context.strokeStyle = "brown";
   context.moveTo(start.x, start.y);
-  context.lineTo(end.x, end.y);
+
+  context.bezierCurveTo(
+    cPoint1.x,
+    cPoint1.y,
+    cPoint2.x,
+    cPoint2.y,
+    end.x,
+    end.y
+  );
+  // context.lineTo(end.x, end.y);
+
   context.stroke();
 }
