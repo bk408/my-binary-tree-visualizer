@@ -1,5 +1,6 @@
 # Process
 
+
 - Understand the concept
 - create binary node tree properties in BinaryTreeNode.js
 - Set default_config in treeUtils.js
