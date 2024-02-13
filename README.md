@@ -7,7 +7,7 @@
 - Create drawBinaryTree.js
 
 - Initialize canvas via query selector
-- creation function drawBinaryTree & pass root canvasElement as argument
+- creation function drawBinaryTree & pass root canvasElement as an argument
 - Find maxWidth & maxHeight for window
 - Initialize the canvas dimensions
 - Calculate the required width & height to draw the tree structure
@@ -22,7 +22,7 @@
 - Find the x & y - position for the circle
 
 - Create drawNode function in treeUtils.js
-- Create draw circle, draw border & write value in circle
+- Create drawCircle, draw border & write value in circle
 
 - recursively Left node created in drawBinaryTree.js
 - recursively Right node created in drawBinaryTree.js
@@ -37,4 +37,12 @@
 - Calculate coordinates for bezier curve
 - Node connect using Bezier curve
 
+-  Textarea, Apply & Clear button created for further process
+- Apply CSS on Textarea, and apply and clear buttons
 
+- Functionality for Apply & Clear buttons and textarea created in drawBinaryTree.js
+
+- Hardcoded data removed from drawBinaryTree.js
+
+- treeConstructor function created in treeutils.js
+- parseInput function created for parsing the data
