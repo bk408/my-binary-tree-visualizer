@@ -1,5 +1,6 @@
-# Process
+![tree-visulizier](https://github.com/bk408/my-binary-tree-visualizer/assets/116827830/f0de63dc-f70b-4e1e-864e-09f012eee812)
 
+# Process
 
 - Understand the concept
 - create binary node tree properties in BinaryTreeNode.js
