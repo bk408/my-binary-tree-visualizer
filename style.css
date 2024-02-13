@@ -1,5 +1,31 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.inputContainer {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 10rem;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+}
+
+.actionBtns {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  width: 5rem;
+  height: 2rem;
 }

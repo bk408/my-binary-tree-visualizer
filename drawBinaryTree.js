@@ -4,6 +4,7 @@ import {
   connectEdges,
   drawNode,
   getRequiredHeightAndWidth,
+  treeConstructor,
 } from "./treeutils.js";
 
 const canvas = document.querySelector("canvas");
@@ -98,48 +99,37 @@ function recursivelyDrawNotes(
     );
   }
 }
+let preValue = "";
 
-const root = new BinaryTreeNode(1); // creating first node
+function init(value) {
+  preValue = value;
 
-const node2 = new BinaryTreeNode(2);
-root.setLeft(node2);
+  clearCanvas();
+  const root = treeConstructor(value);
 
-const node3 = new BinaryTreeNode(3);
-root.setRight(node3);
+  drawBinaryTree(root, canvas);
+}
 
-const node4 = new BinaryTreeNode(4);
-node2.setLeft(node4);
+function clearCanvas() {
+  const context = canvas.getContext("2d");
+  context.clearRect(0, 0, canvas.width, canvas.height);
+}
 
-const node5 = new BinaryTreeNode(5);
-node2.setRight(node5);
+const textarea = document.querySelector("textarea");
+const applyBtn = document.querySelector(".applyBtn");
+const clearBtn = document.querySelector(".clearBtn");
 
-const node6 = new BinaryTreeNode(6);
-node3.setLeft(node6);
+applyBtn.addEventListener("click", () => {
+  if (textarea.value === "") return;
 
-const node7 = new BinaryTreeNode(7);
-node3.setRight(node7);
+  init(textarea.value);
+});
 
-const node8 = new BinaryTreeNode(8);
-node4.setLeft(node8);
+clearBtn.addEventListener("click", () => {
+  textarea.value = "";
+  clearCanvas();
+});
 
-const node9 = new BinaryTreeNode(9);
-node4.setRight(node9);
-
-const node10 = new BinaryTreeNode(10);
-node5.setLeft(node10);
-
-const node11 = new BinaryTreeNode(11);
-node5.setRight(node11);
-
-const node12 = new BinaryTreeNode(12);
-node6.setRight(node12);
-
-const node13 = new BinaryTreeNode(13);
-node7.setLeft(node13);
-
-const node14 = new BinaryTreeNode(14);
-node9.setLeft(node14);
-
-console.log(root);
-
-drawBinaryTree(root, canvas);
+window.addEventListener("resize", () => {
+  init(preValue);
+});
