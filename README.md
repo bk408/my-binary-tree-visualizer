@@ -1,5 +1,6 @@
 # Process
 
+
 - Understand the concept
 - create binary node tree properties in BinaryTreeNode.js
 - Set default_config in treeUtils.js
@@ -9,16 +10,16 @@
 - creation function drawBinaryTree & pass root canvasElement as argument
 - Find maxWidth & maxHeight for window
 - Initialize the canvas dimensions
-- Calculate required width & height to draw the tree structure
+- Calculate the required width & height to draw the tree structure
 
 - create getRequiredHeightAndWidth function in treeUtils.js
-- calculate the height of canvas
-- calculate the width of canvas
+- calculate the height of the canvas
+- calculate the width of the canvas
 
 - calculate center points
 
 - Create recursivelyDrawNotes function in drawBinaryTree.js
-- Find x & y - position for circle
+- Find the x & y - position for the circle
 
 - Create drawNode function in treeUtils.js
 - Create draw circle, draw border & write value in circle
@@ -30,7 +31,7 @@
 - coordinates create for curve
 - Create draw curve
 
-- Understand algorithm behind bezier curve, convex hull
+- Understand the algorithm behind the bezier curve, convex hull
 - https://javascript.info/bezier-curve
 
 - Calculate coordinates for bezier curve
