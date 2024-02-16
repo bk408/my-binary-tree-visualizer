@@ -4,6 +4,7 @@
 
 The "My Binary Tree Visualizer" project is an interactive application designed to visualize binary trees, inspired by the functionality of LeetCode's tree visualizer. Users input tree data, and the application dynamically generates a visual representation of the binary tree. The visualization utilizes a canvas along with Bezier curves to accurately render the tree structure. Behind the scenes, the application employs algorithms to calculate precise coordinates for placing circles (nodes) and connecting them with lines (edges), ensuring an accurate and visually appealing representation of the binary tree. This project combines elements of user interface design, graphical rendering, and algorithmic computation to provide an intuitive tool for understanding and visualizing binary tree structures.
 
+
 # Process
 
 - Understand the concept
@@ -48,6 +49,5 @@ The "My Binary Tree Visualizer" project is an interactive application designed t
 - Functionality for Apply & Clear buttons and textarea created in drawBinaryTree.js
 
 - Hardcoded data removed from drawBinaryTree.js
-
 - treeConstructor function created in treeutils.js
 - parseInput function created for parsing the data
